@@ -8,12 +8,24 @@ article.blog-list {
     }
 }
 
+div.pagination {
+    text-align:center;
+    margin-top:40px;
+    a{
+        margin: 0 10px;
+    }
+    span{
+        color:$header-secondary-color;
+        opacity: 0.5;
+    }
+}
+
 
 article{
     p.meta{
         color:$secondary-text-color;
         text-transform: uppercase;
-        font-family:$open-sans;
+        font-family:$pt-serif;
         font-size:0.75em;
         font-weight:500;
         letter-spacing:0.2em;

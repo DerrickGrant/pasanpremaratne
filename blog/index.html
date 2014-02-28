@@ -3,7 +3,7 @@ layout: default
 title: Pasan Premaratne
 ---
 
-{% for post in site.posts %}
+{% for post in paginator.posts %}
 <article class="blog-list">
     <header>
         <h2>
@@ -23,3 +23,20 @@ title: Pasan Premaratne
     </header>
 </article>
 {% endfor %}
+
+<!-- Pagination links -->
+{% if paginator.total_pages > 1 %}
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">Prev</a>
+  {% else %}
+    <span>Prev</span>
+  {% endif %}
+
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next</a>
+  {% else %}
+    <span>Next</span>
+  {% endif %}
+</div>
+{% endif %}
