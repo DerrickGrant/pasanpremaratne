@@ -481,4 +481,6 @@ a.app-banner:hover {
   text-decoration: none;
   border-bottom: none; }
 a.app-banner img {
+  width: 640px;
+  height: 369px;
   margin: 20px 0; }
