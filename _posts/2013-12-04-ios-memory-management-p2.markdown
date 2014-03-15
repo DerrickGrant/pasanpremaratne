@@ -7,7 +7,7 @@ tags: memory
 ---
 
 In our previous
-[post](http://www.pasanpremaratne.com/2013/09/01/ios-memory-management-p1/)
+[post](http://www.pasanpremaratne.com/2013/09/01/ios-memory-management)
 we went over the basics of memory management and the
 manual-retain-release model that was used before the introduction of
 ARC. With the introduction of ARC, most of the practices under the
