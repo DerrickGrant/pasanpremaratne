@@ -1,6 +1,10 @@
 task :default => [:deploy]
 
-task :build do
+task :push do
+    system("git push")
+end
+
+task :build => :push do
     system("jekyll build")
 end
 
