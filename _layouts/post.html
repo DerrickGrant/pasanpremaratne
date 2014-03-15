@@ -3,7 +3,8 @@ layout: default
 ---
 
 <article class="post">
-    <header>
+    <header class="post-header">
+        <h1>{{ page.title }}</h1>
         <p class="meta">
             {% assign d = page.date | date: "%-d"  %}
             {{ page.date | date: "%B" }}
@@ -15,7 +16,6 @@ layout: default
               {% endcase %},
             {{ page.date | date: "%Y" }}
         </p>
-        <h1>{{ page.title }}</h1>
     </header>
     <section class="content">
         {{ content }}

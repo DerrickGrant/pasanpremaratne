@@ -190,7 +190,8 @@ table {
   border-spacing: 0; }
 
 body {
-  font-family: "PT Serif", Georgia, Times, "Times New Roman", serif;
+  font-family: "museo-sans", sans-serif;
+  font-weight: 300;
   font-size: 18px;
   line-height: 1.5;
   vertical-align: baseline;
@@ -206,77 +207,67 @@ a {
     border-bottom: 1px solid #2979fc; }
 
 h1 {
-  font-family: "pt-sans", sans-serif;
+  font-family: "museo-sans", sans-serif;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 900;
   line-height: 1.3;
-  color: #3b3b3b;
+  color: #353c35;
   border-bottom: none;
   color: #585858;
-  font-size: 50px;
+  font-size: 36px;
   margin-top: 0px;
   padding-top: 0px; }
 
 h2 {
-  font-family: "pt-sans", sans-serif;
+  font-family: "museo-sans", sans-serif;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 900;
   line-height: 1.3;
-  color: #3b3b3b;
+  color: #353c35;
   border-bottom: none;
-  margin-top: 30px;
-  margin-bottom: 15px;
-  font-size: 42px; }
+  font-size: 28px; }
   h2 a {
-    color: #3b3b3b;
+    color: #353c35;
     text-decoration: none; }
     h2 a:hover {
       border-bottom: none;
       text-decoration: underline; }
 
 h3 {
-  font-family: "pt-sans", sans-serif;
+  font-family: "museo-sans", sans-serif;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 900;
   line-height: 1.3;
-  color: #3b3b3b;
+  color: #353c35;
   border-bottom: none;
-  margin-top: 30px;
-  margin-bottom: 15px;
-  font-size: 30px; }
+  font-size: 22px; }
 
 h4 {
-  font-family: "pt-sans", sans-serif;
+  font-family: "museo-sans", sans-serif;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 900;
   line-height: 1.3;
-  color: #3b3b3b;
+  color: #353c35;
   border-bottom: none;
-  margin-top: 30px;
-  margin-bottom: 15px;
-  font-size: 23px; }
+  font-size: 18px; }
 
 h5 {
-  font-family: "pt-sans", sans-serif;
+  font-family: "museo-sans", sans-serif;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 900;
   line-height: 1.3;
-  color: #3b3b3b;
+  color: #353c35;
   border-bottom: none;
-  margin-top: 30px;
-  margin-bottom: 15px;
   font-size: 15px; }
 
 h6 {
-  font-family: "pt-sans", sans-serif;
+  font-family: "museo-sans", sans-serif;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 900;
   line-height: 1.3;
-  color: #3b3b3b;
+  color: #353c35;
   border-bottom: none;
-  margin-top: 30px;
-  margin-bottom: 15px;
-  font-size: 14px; }
+  font-size: 13px; }
 
 p {
   color: #444444; }
@@ -286,10 +277,10 @@ hr {
   text-align: center;
   border: 0;
   height: 1px;
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0));
-  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0));
-  background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0));
-  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0)); }
+  background-image: -webkit-linear-gradient(left, transparent, rgba(0, 0, 0, 0.25), transparent);
+  background-image: -moz-linear-gradient(left, transparent, rgba(0, 0, 0, 0.25), transparent);
+  background-image: -ms-linear-gradient(left, transparent, rgba(0, 0, 0, 0.25), transparent);
+  background-image: -o-linear-gradient(left, transparent, rgba(0, 0, 0, 0.25), transparent); }
   hr:after {
     color: #bbb;
     font-size: 0.6em;
@@ -302,28 +293,33 @@ hr {
 
 header[role="banner"] {
   overflow: hidden;
-  padding: 40px 0 50px 0;
-  text-align: center;
-  border-bottom: 1px solid #dddddd; }
+  height: 60px;
+  padding: 10px 0 0 0;
+  border-bottom: 1px solid #dddddd;
+  background-color: #2979FC; }
+  header[role="banner"] h1 {
+    display: inline-block;
+    margin: 0;
+    padding: 0; }
   header[role="banner"] a.header-title {
-    color: #2979fc; }
+    color: white; }
   header[role="banner"] ul.headlinks {
+    font-size: 20px;
     list-style: none;
     overflow: hidden;
     margin: 0;
-    padding: 0; }
+    padding: 0;
+    float: right; }
     header[role="banner"] ul.headlinks li {
       display: inline-block;
-      margin: 20px 5px 0 5px; }
+      margin: 10px 5px 0 5px; }
       header[role="banner"] ul.headlinks li a {
         display: block;
         margin: 0;
         padding: 0;
-        color: #222222;
-        border-bottom: none;
-        opacity: 0.5; }
+        color: white;
+        border-bottom: none; }
         header[role="banner"] ul.headlinks li a:hover {
-          opacity: 1;
           text-decoration: underline; }
 
 section.container {
@@ -375,79 +371,83 @@ section.container {
       .recent-posts ul li a:hover {
         text-decoration: underline; }
 
-article.blog-list h2 {
-  text-decoration: none;
-  color: #585858; }
-  article.blog-list h2 a {
-    color: #585858; }
+article.blog-list {
+  margin-bottom: 40px; }
+  article.blog-list h2 {
+    text-decoration: none;
+    color: #585858;
+    margin: 0 0 5px 0; }
+    article.blog-list h2 a {
+      color: #585858; }
 
 div.pagination {
   text-align: center;
   margin-top: 40px; }
-  div.pagination a {
-    margin: 0 10px; }
-  div.pagination span {
-    color: #222222;
-    opacity: 0.5; }
+  div.pagination h2 {
+    color: #d4d4d4;
+    display: inline-block; }
+    div.pagination h2 a {
+      margin: 0 10px;
+      color: #2979fc; }
 
+article header.post-header {
+  margin-bottom: 30px; }
+  article header.post-header h1 {
+    margin-bottom: 5px; }
 article p.meta {
-  color: #a4abb2;
+  color: #d4d4d4;
   text-transform: uppercase;
-  font-family: "PT Serif", Georgia, Times, "Times New Roman", serif;
+  font-family: "museo-sans", sans-serif;
   font-size: 0.75em;
-  font-weight: 500;
+  font-weight: 700;
   letter-spacing: 0.2em;
   margin: 0;
   padding: 0; }
-article section.content {
-  font-size: 20px; }
-  article section.content h2 {
-    margin-bottom: 10px; }
-  article section.content p {
-    margin: 10px 0; }
-  article section.content p.caption {
-    font-size: 0.8em;
-    color: #8b8b8b;
-    text-align: center;
-    margin: 0 0 30px 0; }
-  article section.content ul, article section.content ol {
-    margin: 0 0 20px 40px; }
-  article section.content blockquote {
-    font-family: "PT Serif", Georgia, Times, "Times New Roman", serif;
-    padding-left: 10px;
-    border-left: 2px solid; }
-  article section.content img, article section.content video {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    width: auto;
-    padding: 10px 0; }
-  article section.content img {
-    margin: 25px 0; }
-  article section.content blockquote {
-    font-family: "PT Serif", Georgia, Times, "Times New Roman", serif;
-    padding-left: 10px;
-    border-left: 4px solid #2979fc;
-    font-style: italic; }
-    article section.content blockquote p {
-      color: #777777; }
-  article section.content div.highlight {
-    background-color: #edeff0;
-    padding: 10px;
-    margin: 15px 0;
-    overflow: auto;
-    border-left: 4px solid #2979fc; }
-    article section.content div.highlight pre {
-      padding: 0px;
-      margin: 0px; }
-    article section.content div.highlight code {
-      padding: 0px; }
-  article section.content code {
-    background-color: #edeff0;
-    padding: 5px; }
-  article section.content ul, article section.content ol {
-    margin: 0 0 20px 40px;
-    padding: 0; }
+article section.content h2 {
+  margin-bottom: 10px; }
+article section.content p {
+  margin: 10px 0; }
+article section.content p.caption {
+  font-size: 0.8em;
+  color: #8b8b8b;
+  text-align: center;
+  margin: 0 0 30px 0; }
+article section.content ul, article section.content ol {
+  margin: 0 0 20px 40px; }
+article section.content img, article section.content video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  padding: 10px 0; }
+article section.content img {
+  margin: 25px 0;
+  margin-right: auto;
+  margin-left: auto; }
+article section.content blockquote {
+  font-family: "museo-sans", sans-serif;
+  padding-left: 10px;
+  border-left: 4px solid #2979fc;
+  font-style: italic; }
+  article section.content blockquote p {
+    color: #777777; }
+article section.content div.highlight {
+  background-color: #edeff0;
+  padding: 10px;
+  margin: 15px 0;
+  overflow: auto;
+  border-left: 4px solid #2979fc; }
+  article section.content div.highlight pre {
+    padding: 0px;
+    margin: 0px; }
+  article section.content div.highlight code {
+    padding: 0px; }
+article section.content code {
+  background-color: #edeff0;
+  padding: 5px; }
+article section.content ul, article section.content ol {
+  margin: 0 0 20px 40px;
+  padding: 0; }
 
 footer section.post-footer {
   margin-top: 30px;

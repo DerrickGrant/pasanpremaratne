@@ -3,23 +3,41 @@ layout: default
 title: Pasan Premaratne
 ---
 
-<p>Hi, I'm Pasan. I live in Orlando, FL and work for <a href="http://teamtreehouse.com/home">Treehouse</a>.</p>
+{% for post in paginator.posts %}
+<article class="blog-list">
+    <header>
+        <h2>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+        </h2>
+        <p class="meta">
+            {% assign d = post.date | date: "%-d"  %}
+            {{ post.date | date: "%B" }}
+            {% case d %}
+              {% when '1' or '21' or '31' %}{{ d }}st
+              {% when '2' or '22' %}{{ d }}nd
+              {% when '3' or '23' %}{{ d }}rd
+              {% else %}{{ d }}th
+              {% endcase %},
+            {{ post.date | date: "%Y" }}
+        </p>
+    </header>
+    <p>{{ post.excerpt }}</p>
+</article>
+{% endfor %}
 
-<h1>Apps</h1>
-<p>I'm obsessed with iOS devices and although I'm fairly late to the game, I've started to work on apps of my own. Here are the apps I've released:</p>
-<div class="app-icons">
-    <a id="move-icon" href="https://itunes.apple.com/us/app/move-alarm-clock/id826147112?ls=1&mt=8" title="Move">
-    <img src="{{ site.url }}/assets/images/MoveIcon.png">
-</a>
+<!-- Pagination links -->
+{% if paginator.total_pages > 1 %}
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <h2><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">Prev</a></h2>
+  {% else %}
+    <h2>Prev</h2>
+  {% endif %}
+
+  {% if paginator.next_page %}
+    <h2><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next</a></h2>
+  {% else %}
+    <h2>Next</h2>
+  {% endif %}
 </div>
-
-<h1>Recent Blog Posts</h1>
-<section class="recent-posts">
-<ul>
-  {% for post in site.posts limit: 3 %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
-</section>
+{% endif %}
