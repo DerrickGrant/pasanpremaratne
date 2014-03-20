@@ -379,6 +379,8 @@ article.blog-list {
     margin: 0 0 5px 0; }
     article.blog-list h2 a {
       color: #585858; }
+    article.blog-list h2 a.external-post {
+      text-decoration: underline; }
 
 div.pagination {
   text-align: center;
