@@ -192,6 +192,8 @@ If you want to dig deeper and learn more about using QC for prototyping, here's 
 - [Prototyping with Facebook Origami](http://cocoaheads.tv/prototyping-with-facebook-origami-by-jay-thrash/) by Jay Thrash
 - [Prototyping 101 - Quartz Composer](http://wayfinder.co/pathways/530fd1e8632075a63d000003/prototyping-101-quartz-composer)
 
+Once you have the basics down read [Learning to Build Abstractions in Quartz Composer](http://sartak.org/2014/03/learning-to-build-abstractions-in-quartz-composer.html) by [Shawn Moore](https://twitter.com/sartak)
+
 ## Other Prototyping Tools
 
 If QC isn't your cup of tea, try out some of the other tools available:
